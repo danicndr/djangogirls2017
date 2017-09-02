@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Django Girls</title>
+  </head>
+  <body>
+    <h1>Bienvenidos a Djangogirls</h1>
+    {% for post in posts %}
+        <div>
+            <p>published: {{ post.fecha_publicacion}}</p>
+            <h1><a href="">{{ post.titulo }}</a></h1>
+            <p>{{ post.contenido|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
+  </body>
+</html>
